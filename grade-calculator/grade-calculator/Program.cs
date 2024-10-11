@@ -60,7 +60,7 @@ namespace grade_calculator
             }
 
             //average for the grade 
-            float average = total / 10;
+            double average = total / 10;
 
             //final caulculated average
             Console.WriteLine("Your final calculated average is: " + average);
