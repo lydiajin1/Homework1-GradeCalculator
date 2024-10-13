@@ -17,14 +17,16 @@ namespace grade_calculator
             string StudentName = "Lydia";
 
             //array of grades
-            int[] grades = { 100, 92, 87, 200, -20, 52, 82, 75, 67, 88 };
+            int[] grades = {100, 92, 87, 200, -20, 52, 82, 75, 67, 88 };
 
             Console.WriteLine("Welcome " + StudentName + "!");
             Console.WriteLine("Here are your grades: ");
 
             //loop through array 
+            int total = 0;
+
             for (int i = 0; i < grades.Length; i++)
-            {
+            { 
                 int grade = grades[i];
                 Console.WriteLine(grade);
 
@@ -57,6 +59,7 @@ namespace grade_calculator
                     Console.WriteLine("This is out of the range of 0-100. How did you even get this grade?");
 
                 }
+                total += grade;
             }
 
             //average for the grade 
